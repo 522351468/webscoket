@@ -1,0 +1,18 @@
+package com.starscube.action;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+@RequestMapping("/loginOut.do")
+public class LoginOutAction {
+
+	@RequestMapping("/loginOut")
+	public ModelAndView returnLogin(){
+		ModelAndView mv=new ModelAndView();
+		mv.addObject("login");
+		return mv;
+	}
+}
